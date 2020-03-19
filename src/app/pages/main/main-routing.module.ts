@@ -1,20 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomePage } from './home.page';
+import { MainPage } from './main.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomePage,
+    component: MainPage,
     children:[
       {
-        path: ':id',
-        loadChildren:()=> import('../main/main.module').then(m=>m.MainPageModule)
-      },
-      {
-        path: '',
-        redirectTo: 'Dashboard'
+        path:':id',
+        redirectTo:''
       }
     ]
   }
@@ -24,4 +20,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class HomePageRoutingModule {}
+export class MainPageRoutingModule {}

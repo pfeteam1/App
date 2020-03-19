@@ -7,16 +7,14 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.page.scss', '../../app.component.scss'],
 })
 export class HomePage implements OnInit {
-  public feature: string;
-  public selectedIndex = 0;
   public appPages = [
     {
       title: 'Dashboard',
       url: '/home/Dashboard'
     },
     {
-      title: 'emails',
-      url: '/home/email'
+      title: 'email',
+      url: '/home/Email'
     }
   ];
   
@@ -24,10 +22,7 @@ export class HomePage implements OnInit {
   constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.feature = this.activatedRoute.snapshot.paramMap.get('id');    
-    if(this.feature !== undefined){
-      this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === this.feature.toLowerCase());
-    }
+    console.log("inited");
   }
 
 }

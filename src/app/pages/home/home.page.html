@@ -6,7 +6,7 @@
         <ion-note>Mr. User Name</ion-note>
 
         <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-          <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">
+          <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
             <!-- <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon> -->
             <ion-label>{{ p.title }}</ion-label>
           </ion-item>
@@ -29,18 +29,10 @@
         <ion-title>{{ feature }}</ion-title>
       </ion-toolbar>
     </ion-header>
-    
-    <ion-content [fullscreen]="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">{{ feature }}</ion-title>
-        </ion-toolbar>
-      </ion-header>
-    
-      <div id="container">
-        <strong class="capitalize">{{ feature }}</strong>
-        <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-      </div>
+      <ion-content [fullscreen]="true" style="border-style: dotted;">
+
+
+      <ion-router-outlet></ion-router-outlet>
     </ion-content>
   </ion-content>
 </ion-split-pane>
