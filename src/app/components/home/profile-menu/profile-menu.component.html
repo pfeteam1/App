@@ -1,9 +1,12 @@
-<ion-list>
-  <ion-item>
-    <ion-label class="ion-padding">benzamia rabie</ion-label>
-    <ion-avatar (click)="presentPopOver($event)">
-      <img src="/assets/shapes.svg" />
-    </ion-avatar>
-  </ion-item>
-</ion-list>
-
+<ion-grid>
+  <ion-row slot>
+    <ion-col push="2" class="ion-padding">
+      <ion-label>benzamia rabie</ion-label>
+    </ion-col>
+    <ion-col push="1">
+      <ion-avatar (click)="presentPopOver($event)" class="ion-padding">
+        <img src="/assets/shapes.svg" />
+      </ion-avatar>
+    </ion-col>
+  </ion-row>
+</ion-grid>

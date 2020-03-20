@@ -1,12 +1,21 @@
 <ion-split-pane contentId="main-content">
   <ion-menu contentId="main-content" type="overlay">
     <ion-content>
-      <ion-list id="inbox-list">
+      <ion-list lines="none">
         <ion-list-header>Menu</ion-list-header>
-        <ion-note>Mr. User Name</ion-note>
+        <!-- <ion-note>Mr. User Name</ion-note> -->
 
-        <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-          <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+        <ion-menu-toggle
+          auto-hide="false"
+          *ngFor="let p of appPages; let i = index"
+        >
+          <ion-item
+            color="primary"
+            routerDirection="root"
+            [routerLink]="p.url"
+            detail="false"
+            routerLinkActive="selected"
+          >
             <!-- <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon> -->
             <ion-label>{{ p.title }}</ion-label>
           </ion-item>
@@ -18,7 +27,7 @@
     ======= Main content ========
     -->
   <ion-content id="main-content">
-    <ion-header [translucent]="true" >
+    <ion-header translucent>
       <ion-toolbar>
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
@@ -29,9 +38,7 @@
         <ion-title>{{ feature }}</ion-title>
       </ion-toolbar>
     </ion-header>
-      <ion-content [fullscreen]="true" style="border-style: dotted;">
-
-
+    <ion-content [fullscreen]="true">
       <ion-router-outlet></ion-router-outlet>
     </ion-content>
   </ion-content>

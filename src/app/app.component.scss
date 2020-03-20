@@ -1,4 +1,7 @@
-ion-menu ion-content {
+  ion-app{
+    font-family: var(--ion-font-family,'Nunito');
+  }
+  ion-menu ion-content {
     --background: var(--ion-item-background, var(--ion-background-color, #fff));
   }
   
@@ -38,7 +41,6 @@ ion-menu ion-content {
   
     margin-bottom: 18px;
   
-    color: #757575;
   
     min-height: 26px;
   }
@@ -107,12 +109,7 @@ ion-menu ion-content {
     margin-bottom: 8px;
   }
   
-  ion-note {
-    display: inline-block;
-    font-size: 16px;
-  
-    color: var(--ion-color-medium-shade);
-  }
+ 
   
   ion-item.selected {
     --color: var(--ion-color-primary);

@@ -19,6 +19,7 @@ export class ProfileMenuComponent  {
       event:ev,
       translucent: true
     });
+    popover.style.cssText = '--min-width: 100px; --max-width: 100px;';
     return await popover.present();
   }
 

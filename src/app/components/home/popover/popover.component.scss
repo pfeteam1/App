@@ -1,0 +1,15 @@
+
+ion-item{
+   margin-top: -10px !important;
+   margin-bottom: -10px !important;
+   align-items: center;
+   ion-label{
+   text-align: center;   
+   font-size: small;
+   
+}
+   &:hover{
+      --background: var(--ion-color-light); 
+      cursor: pointer;
+   }
+}
