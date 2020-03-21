@@ -7,6 +7,9 @@ import { IonicModule } from '@ionic/angular';
 import { MainPageRoutingModule } from './main-routing.module';
 
 import { MainPage } from './main.page';
+import { DashboardComponent } from 'src/app/components/main/dashboard/dashboard.component';
+
+
 
 @NgModule({
   imports: [
@@ -15,6 +18,7 @@ import { MainPage } from './main.page';
     IonicModule,
     MainPageRoutingModule
   ],
-  declarations: [MainPage]
+  entryComponents:[DashboardComponent],
+  declarations: [MainPage,DashboardComponent]
 })
 export class MainPageModule {}

@@ -1,5 +1,7 @@
-
-  <div id="container">
-    <strong class="capitalize">MAIN</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<div id="container">
+  <!-- <strong class="capitalize">MAIN</strong> -->
+  <!-- <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p> -->
+  <!-- <p *ngIf='router.url.includes("Dashboard")'>dashboard</p> -->
+  <app-dashboard *ngIf='router.url.includes("Dashboard")'></app-dashboard>
+    
+</div>
