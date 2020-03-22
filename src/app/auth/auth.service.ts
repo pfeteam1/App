@@ -39,7 +39,7 @@ export class AuthService {
         return from(this.storage.get(TOKEN_KEY));
       }),
       map(token=>{
-        if (token) {
+        if (token && !helper.isTokenExpired(token)) {
           let decoded = helper.decodeToken(token);
           this.userData.next(decoded);
           return true;
