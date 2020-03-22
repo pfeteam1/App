@@ -11,8 +11,6 @@ export class MainPage implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    console.log(this.router.url);
-    
   }
 
 }

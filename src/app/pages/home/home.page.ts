@@ -22,7 +22,6 @@ export class HomePage implements OnInit {
   constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    console.log("inited");
   }
 
 }
