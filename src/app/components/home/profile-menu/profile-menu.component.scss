@@ -3,10 +3,19 @@ ion-avatar{
         cursor: pointer;
     }
 }
+ion-label{
+    color:var(--ion-color-medium-shade) !important;
+    text-align: end;
+    font-size: medium !important; 
+
+}
+ion-icon:hover{
+    cursor: pointer;
+}
 .verticalLine {
-    width:0.7%;
-    height:50%;
-    background: rgba(61, 61, 61, 0.26);
-    margin-right: 20px;
-    
+    width:0;
+    border-right: 1px solid #e3e6f0;
+    height:calc(4rem - 2rem);
+    margin:auto 1rem;
   }
+

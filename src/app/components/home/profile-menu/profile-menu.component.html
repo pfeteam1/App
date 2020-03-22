@@ -1,9 +1,9 @@
 <ion-item lines="none">
-  <ion-icon name="mail-outline"></ion-icon>
-  <ion-icon name="notifications-outline" class="ion-padding"></ion-icon>
-  <div class="verticalLine"></div>
-  <ion-label style="color:var(--ion-color-medium-shade);">
-    Benzamia Rabie
+  <ion-icon (click)="presentPopOver($event)"  name="mail-outline" class="ion-padding"></ion-icon>
+  <ion-icon (click)="presentPopOver($event)"  name="notifications-outline" ></ion-icon>
+  <div class="verticalLine " ></div>
+  <ion-label>
+    Benzamia Rabie 
   </ion-label>
   <ion-avatar (click)="presentPopOver($event)" slot="end">
     <img src="/assets/shapes.svg" />
