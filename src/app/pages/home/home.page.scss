@@ -12,8 +12,10 @@ ion-menu{
     }     
     ion-list-header{
     --background:var(--ion-color-primary) !important ;
-    font-size:1.3rem;
-  
+    font-size:1.8rem;
+    font-weight: bold;
+    margin-top: -26px;
+    text-align: center;
     }
    ion-note{
     color:var(--ion-color-primary-contrast);
@@ -25,9 +27,9 @@ ion-menu{
 
 }
 ion-split-pane {
-    --side-max-width: 300px;
+    --side-max-width: 200px;
     --side-min-width: 100px;
-    --side-width: 200px;
+  
 }
 
 
